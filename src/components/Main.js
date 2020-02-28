@@ -6,7 +6,7 @@ export default class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'Main Component'
+            name: 'React Test App'
         };
     }
 
@@ -14,7 +14,7 @@ export default class Main extends Component {
         return (
             <div>
                 <h2>{this.state.name}</h2>
-                <hr />
+                
                 <Form />
             </div>
         );
