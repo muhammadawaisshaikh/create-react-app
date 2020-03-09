@@ -1,21 +1,16 @@
-import React, { useState, Component } from 'react';
+import React from 'react';
 
 const Input = function (props) {
-    console.log("Props in Input :", props)
-
-    const [value, setValue] = useState('');
+    console.log("Props in Input :", props);
 
     const handleChange = event => {
-        // console.log(event.target.value);
-        setValue(event.target.value);
-
-        props.onchange(value);
+        props.onchange(event.target.value);
     }
 
     return (
         <div>
-            <input placeholder={props.data.name} 
-                id={props.data.name}
+            <input placeholder="name"
+                id="name"
                 onChange= {handleChange}
             />
         </div>
