@@ -20,9 +20,10 @@ const Form = function (props) {
 
     return (
         <div>
+            {/* input component  */}
             <Input data={value} onchange={(e) => { onchange(e) }}/>
 
-            <a onClick={togller}>state: {toggle}</a>
+            <a onClick={togller} style={{padding: 20, margin: 10, backgroundColor: 'green', color: '#ffffff'}}>Toggle State</a>
         </div>
     );
 }

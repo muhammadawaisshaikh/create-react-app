@@ -8,12 +8,12 @@ const Input = function (props) {
     }
 
     return (
-        <div>
-            <input placeholder="name"
-                id="name"
-                onChange= {handleChange}
-            />
-        </div>
+        <input 
+            placeholder="name"
+            id="name"
+            style={{padding: 15, fontSize: 18}}
+            onChange= {handleChange}
+        />
     );
 }
 export default Input;
