@@ -6,8 +6,16 @@ export default class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'React Test App'
+            name: 'React Test App',
+            toggle: true
         };
+    }
+
+    handleToggler = () => {
+        if(this.state.toggle) this.setState({toggle: false})
+        if(!this.state.toggle) this.setState({toggle: true})
+
+        console.log(this.state.toggle);
     }
 
     render() {
@@ -15,7 +23,7 @@ export default class Main extends Component {
             <div>
                 <h2>{this.state.name}</h2>
                 
-                <Form />
+                <Form toggle={this.state.toggle} toggler={this.handleToggler} />
             </div>
         );
     }
