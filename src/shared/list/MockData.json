@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Alison",
+        "age": 23,
+        "contact": 3215478965,
+        "location": "karachi"
+    },
+    {
+        "id": 2,
+        "name": "Lucas Milano",
+        "age": 24,
+        "contact": 3452569856,
+        "location": "karachi"
+    },
+    {
+        "id": 3,
+        "name": "George",
+        "age": 29,
+        "contact": 3005289654,
+        "location": "karachi"
+    },
+    {
+        "id": 4,
+        "name": "Chloe Henry",
+        "age": 24,
+        "contact": 3356586542,
+        "location": "karachi"
+    }
+]

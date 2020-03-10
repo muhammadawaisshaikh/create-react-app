@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Form from './form/Form'
+import List from '../shared/list/List';
 
 export default class Main extends Component {
     constructor(props) {
@@ -29,7 +30,7 @@ export default class Main extends Component {
                 <Form toggle={this.state.toggle} toggler={this.handleToggler} />
 
                 <hr />
-                
+                <List />
             </div>
         );
     }
