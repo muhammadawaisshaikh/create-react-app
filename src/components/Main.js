@@ -20,10 +20,16 @@ export default class Main extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{padding: 20}}>
                 <h2>{this.state.name}</h2>
-                
+
+                <hr />
+
+                <p>below form covers two things: <br />1. Sharing data as props and change the state using event emit and callbacks. <br />2. Passing props from child to parent react</p>
                 <Form toggle={this.state.toggle} toggler={this.handleToggler} />
+
+                <hr />
+                
             </div>
         );
     }
